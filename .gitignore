@@ -1,0 +1,66 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.env
+# testing
+/coverage
+
+# production
+/build
+/public
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore system files and directories
+*.log
+*.env
+.DS_Store
+# Ignore Windows desktop.ini files
+desktop.ini
+.env
+
+# Ignore node_modules
+node_modules/
+
+# Ignore VS Code-related files (if any)
+.vscode/
+
+# Ignore the Visual Studio Code.app (if it ever shows up again)
+/Visual Studio Code.app/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.env
+# testing
+/coverage
+
+# production
+/build
+/public
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+git status
+
+
