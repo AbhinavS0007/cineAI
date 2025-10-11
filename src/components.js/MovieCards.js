@@ -18,7 +18,7 @@ const MovieCards = ({ movie }) => {
   return (
     <div
       className="min-w-44 max-h-64 overflow-hidden pr-4 cursor-pointer"
-      onClick={() => addMovietoTrailer(movieName, movieId)}
+      // onClick={() => addMovietoTrailer(movieName, movieId)}
     >
       <img src={movieImage} alt={movieName} />
     </div>

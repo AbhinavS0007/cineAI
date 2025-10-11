@@ -16,12 +16,12 @@ const useDifferentTypeOfMovies = () =>{
 
   const GetMovies = async () => {
     try {
-      const response1 = await fetch(PopularMovies_URL, PopularMovies_Options);
+      // const response1 = await fetch(PopularMovies_URL, PopularMovies_Options);
       // const response2 = await fetch(RecentlyAddedMovies, RecentlyAddedMovies_Options);
       // const response3 = await fetch(ALL_TIME_2024_HITS, ALL_TIME_2024_HITS_Options);
       // const response4 = await fetch(TrendingMovies_URL, TrendingMovies_Options);
       // const response5 = await fetch(upcommingMovies, upcommingMovies_Options);
-      console.log(response1);
+      // console.log(response1);
       
 
       // const result1 = await response1.json();

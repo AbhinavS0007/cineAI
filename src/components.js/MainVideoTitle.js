@@ -38,7 +38,7 @@ const MainVideoTitle = ({ imdb_id }) => {
   }
 
   return (
-    <div className="absolute top-20 pt-54 left-12 w-1/2 text-white mt-80">
+    <div className="absolute top-20 pt-54 left-12 w-1/2 text-white mt-44">
       <h1 className="text-2xl md:text-4xl px-3 font-bold leading-tight">
         {movieDetails.title}
       </h1>

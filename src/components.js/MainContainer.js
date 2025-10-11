@@ -13,9 +13,9 @@ const MainContainer = () => {
   const movieName =  useSelector((store)=> store.movies?.nowPlayingMovies?.movieName);
   const movieId =  useSelector((store)=> store.movies?.nowPlayingMovies?.movieId);
 
-  const { PopularMovies, loading, recentlyAddedMovies,allTime2024Hits, trendingMovies } = useDifferentTypeOfMovies();
+  const { PopularMovies, loading, recentlyAddedMoviesm,allTime2024Hits, trendingMovies } = useDifferentTypeOfMovies();
 
-  const backgroundVideo = allTime2024Hits;
+  // const backgroundVideo = allTime2024Hits;
 
   function getRandomArbitrary(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -24,9 +24,11 @@ const MainContainer = () => {
 
   useEffect(()=>{
 
-    const randomIndex = getRandomArbitrary(0, backgroundVideo.length - 1);
-    const randomMovieName = backgroundVideo[randomIndex]?.title;
-    const randomMovieId =  backgroundVideo[randomIndex]?.imdb_id;
+    // const randomIndex = getRandomArbitrary(0, backgroundVideo.length - 1);
+    // const randomMovieName = backgroundVideo[randomIndex]?.title;
+    // const randomMovieId =  backgroundVideo[randomIndex]?.imdb_id;
+     const randomMovieName = "Mahavatar Narsimha";
+     const randomMovieId =  "tt34365591";
 
     if(randomMovieName && randomMovieId){
       dispatch(removeNowPlayingMovies());
@@ -45,9 +47,11 @@ const MainContainer = () => {
     );
   }
 
-  if (backgroundVideo.length === 0) {
-    return <div>No movies found.</div>;
-  }
+  // if (backgroundVideo.length === 0) {
+  //   return <div>No movies found.</div>;
+  // }
+
+  
 
   
 

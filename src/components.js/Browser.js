@@ -4,6 +4,8 @@ import SecondaryContainer from "./SecondaryContainer";
 import Header from "./Header";
 
 const Browser = () => {
+  console.log("thid id ");
+  
 
   return (
     <div>

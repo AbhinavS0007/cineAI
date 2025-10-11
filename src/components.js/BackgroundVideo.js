@@ -3,6 +3,8 @@ import useNowPlayingVideo from "../hooks/useNowPlayingVideo";
 import { useSelector } from "react-redux";
 
 const BackgroundVideo = ({ bg_imdb_id }) => {
+  console.log("his is movie name",bg_imdb_id);
+  
   const { videoId } = useNowPlayingVideo(bg_imdb_id);
   const mute = useSelector((store) => store.toggleEvents?.mute);
   const playerRef = useRef(null);

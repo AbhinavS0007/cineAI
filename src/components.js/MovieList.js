@@ -25,7 +25,7 @@ const MovieList = ({ title, movies }) => {
   useEffect(() => {
     const fetchPosters = async () => {
       const promiseArray = movies.map(async (movie) => {
-        const poster = await extractImage(movie.imdb_id);
+        const poster = await extractImage(movie);
         return { ...movie, poster };
       });
 
@@ -38,7 +38,7 @@ const MovieList = ({ title, movies }) => {
     }
   }, [movies]);
 
-  // console.log(allMovies);
+  console.log(allMovies);
 
   if(!allMovies) return null;
   
