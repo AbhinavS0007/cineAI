@@ -104,21 +104,72 @@ const SecondaryContainer = () => {
     "tt0088363",
     "tt0032553"
   ]
-  
-  
+  const allTimeBollywoodHits = [
+    "tt10295212",
+    "tt11934846",
+    "tt14107554",
+    "tt10895576",
+    "tt8983228",
+    "tt10350626",
+    "tt10230422",
+    "tt12567088",
+    "tt10515526",
+    "tt8110330",
+    "tt7805960",
+    "tt11651796",
+    "tt8983164",
+    "tt10731264",
+    "tt9766280",
+    "tt8983166",
+    "tt9637132",
+    "tt8108274",
+    "tt10295212",
+    "tt11934846",
+    "tt14107554",
+    "tt10895576",
+    "tt8983228",
+  ];
+  const allTime2024Hits = [
 
-  // if (loading) return null;
-  if (!PopularMovies) return null;
+  "tt15239678",
+  "tt8999762",
+  "tt30321095",
+  "tt5040012",
+  "tt29623480",
+  "tt12037194",
+  "tt17526714",
+  "tt21823606",
+  "tt28491891",
+  "tt20215234",
+  "tt26446278",
+  "tt24216998",
+  "tt1684562",
+  "tt15239678",
+  "tt8999762",
+  "tt30321095",
+  "tt5040012",
+  "tt29623480",
+  "tt12037194",
+  "tt17526714",
+  "tt21823606",
+  "tt28491891",
+  "tt20215234",
+  "tt26446278",
+  "tt24216998",
+
+  ];
+  if (!PopularMovies && !allTimeBollywoodHits && !allTime2024Hits) return null;
 
 
   return (
     <div className="bg-black ">
       <div className=" md:-mt-48 pl-4 md:pl-12 relative z-20 ">
-         {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={PopularMovies} />}
-        {/* {PopularMovies && <MovieList title={"Trending Movies . . . "} movies={trendingMovies} />}
-        {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={upCommingMovies} />}
-        {PopularMovies && <MovieList title={"Recently Added Movies . . ."} movies={recentlyAddedMovies} />}
-        {PopularMovies && <MovieList title={"All time 2024 Hits . . ."} movies={allTime2024Hits} />} */}
+      {allTimeBollywoodHits && <MovieList title={"Bollywood Movies . . ."} movies={allTimeBollywoodHits} />}
+      {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={PopularMovies} />}
+      {allTime2024Hits && <MovieList title={"All time 2024 Hits . . ."} movies={allTime2024Hits} />}
+      {allTimeBollywoodHits && <MovieList title={"Bollywood Movies . . ."} movies={allTimeBollywoodHits} />}
+      {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={PopularMovies} />}
+      {allTime2024Hits && <MovieList title={"All time 2024 Hits . . ."} movies={allTime2024Hits} />}
       </div>
     </div>
   );
