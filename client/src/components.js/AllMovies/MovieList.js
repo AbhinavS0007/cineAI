@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import MovieCards from "./MovieCards";
+import MovieCards from "./MovieCards"
 
 const MovieList = ({ title, movies }) => {
   const [allMovies, setAllMovies] = useState([]);
@@ -38,7 +38,7 @@ const MovieList = ({ title, movies }) => {
     }
   }, [movies]);
 
-  console.log(allMovies);
+
 
   if(!allMovies) return null;
   

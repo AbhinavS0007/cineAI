@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import Header from "./Header"; // Optional
-import { Search_Options } from "../utils.js/constents";
+import Header from "../header/Header"; // Optional
+import { Search_Options } from "../../utils.js/constents";
 import { toast } from "react-toastify";
 
 const GPTSearch = () => {
@@ -75,7 +75,6 @@ const GPTSearch = () => {
     setIsLoading(false);
   };
 
-  // console.log(SuggestedMovies);
   
 
   return (

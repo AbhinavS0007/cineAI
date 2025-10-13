@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { addNowPlayingMovies, removeNowPlayingMovies } from "../utils.js/movieSlice";
+import { addNowPlayingMovies, removeNowPlayingMovies } from "../../utils.js/movieSlice";
 
 const MovieCards = ({ movie }) => {
   const movieImage = movie.poster;

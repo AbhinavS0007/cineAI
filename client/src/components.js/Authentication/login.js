@@ -1,21 +1,21 @@
 import React, { useState, useRef } from "react";
-import Header from "./Header";
+import Header from "../header/Header";
 import {
   Formvalidation,
   FormNameValidation,
   FormPassValidation,
-} from "../utils.js/validateform";
+} from "../../utils.js/validateform";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { auth } from "../utils.js/firebase";
+import { auth } from "../../utils.js/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { adduser } from "../utils.js/userSlice";
+import { adduser } from "../../utils.js/userSlice";
 import { toast } from "react-toastify";
-import { Profile_Image } from "../utils.js/constents";
+import { Profile_Image } from "../../utils.js/constents";
 
 const Login = () => {
   

@@ -1,6 +1,6 @@
 import React from "react";
 import MovieList from "./MovieList";
-import useDifferentTypeOfMovies from "../hooks/useDifferentTypeOfMovies";
+import useDifferentTypeOfMovies from "../../hooks/useDifferentTypeOfMovies";
 
 const SecondaryContainer = () => {
 
@@ -165,11 +165,11 @@ const SecondaryContainer = () => {
     <div className="bg-black ">
       <div className=" md:-mt-48 pl-4 md:pl-12 relative z-20 ">
       {allTimeBollywoodHits && <MovieList title={"Bollywood Movies . . ."} movies={allTimeBollywoodHits} />}
-      {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={PopularMovies} />}
+      {/* {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={PopularMovies} />}
       {allTime2024Hits && <MovieList title={"All time 2024 Hits . . ."} movies={allTime2024Hits} />}
       {allTimeBollywoodHits && <MovieList title={"Bollywood Movies . . ."} movies={allTimeBollywoodHits} />}
       {PopularMovies && <MovieList title={"Popular Movies . . ."} movies={PopularMovies} />}
-      {allTime2024Hits && <MovieList title={"All time 2024 Hits . . ."} movies={allTime2024Hits} />}
+      {allTime2024Hits && <MovieList title={"All time 2024 Hits . . ."} movies={allTime2024Hits} />} */}
       </div>
     </div>
   );

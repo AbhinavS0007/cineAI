@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { NETFLIX_LOGO } from "../utils.js/constents";
+import { NETFLIX_LOGO } from "../../utils.js/constents";
 
 import { useSelector } from "react-redux";
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Profile_Image } from "../utils.js/constents";
+import { Profile_Image } from "../../utils.js/constents";
+import cinAILogo from "./AppLogo.png"
 
 const Header = () => {
 
@@ -42,9 +43,9 @@ const Header = () => {
   // if(user.displayName) console.log(user.displayName);
 
   return (
-    <div className="absolute w-screen px-8 py-2 flex justify-between items-center bg-gradient-to-b from-black z-10">
+    <div className="absolute w-screen px-8 py-2 flex bg-slate-700  justify-between items-center bg-gradient-to-b from-black z-10">
       <div>
-        <img className="w-44" src={NETFLIX_LOGO} alt="Logo" />
+        <img className="w-48 h-16 overflow-hidden" src={cinAILogo} alt="Logo" />
       </div>
       {user && (
         <div className="flex space-x-6 w-auto font-sans   justify-around items-center ">

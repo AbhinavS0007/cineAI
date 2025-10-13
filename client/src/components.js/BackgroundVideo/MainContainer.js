@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import MainVideoTitle from "./MainVideoTitle";
 import BackgroundVideo from "./BackgroundVideo";
-// import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
-import useDifferentTypeOfMovies from "../hooks/useDifferentTypeOfMovies";
+import useDifferentTypeOfMovies from "../../hooks/useDifferentTypeOfMovies";
 import { useDispatch, useSelector } from "react-redux";
-import { addNowPlayingMovies, removeNowPlayingMovies } from "../utils.js/movieSlice";
+import { addNowPlayingMovies, removeNowPlayingMovies } from "../../utils.js/movieSlice";
 
 const MainContainer = () => {
 
@@ -12,9 +11,9 @@ const MainContainer = () => {
 
   const movieName =  useSelector((store)=> store.movies?.nowPlayingMovies?.movieName);
   const movieId =  useSelector((store)=> store.movies?.nowPlayingMovies?.movieId);
+  const loading = false;
 
-  const { PopularMovies, loading, recentlyAddedMoviesm,allTime2024Hits, trendingMovies } = useDifferentTypeOfMovies();
-
+  // const { PopularMovies, loading, recentlyAddedMoviesm,allTime2024Hits, trendingMovies } = useDifferentTypeOfMovies();
   // const backgroundVideo = allTime2024Hits;
 
   function getRandomArbitrary(min, max) {
@@ -46,14 +45,6 @@ const MainContainer = () => {
       </div>
     );
   }
-
-  // if (backgroundVideo.length === 0) {
-  //   return <div>No movies found.</div>;
-  // }
-
-  
-
-  
 
 
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { AdvanceMovieAPI_options } from "../utils.js/constents";
+import { AdvanceMovieAPI_options } from "../../utils.js/constents";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMuteOption } from "../utils.js/toggleSlice";
+import { toggleMuteOption } from "../../utils.js/toggleSlice";
 
 const MainVideoTitle = ({ imdb_id }) => {
   const [movieDetails, setMovieDetails] = useState(null);

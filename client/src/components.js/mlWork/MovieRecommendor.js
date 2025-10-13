@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import Select from "react-select"; // ✅ Import Select
-import { Search_Options } from "../utils.js/constents";
+import Header from "../header/Header";
+import Select from "react-select"; 
+import { Search_Options } from "../../utils.js/constents";
 
 const MovieRecommendor = () => {
   const [recommendedMovies, setrecommendedMovies] = useState([]);

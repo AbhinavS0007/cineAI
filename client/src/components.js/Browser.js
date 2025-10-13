@@ -1,10 +1,9 @@
 import React from "react";
-import MainContainer from "./MainContainer";
-import SecondaryContainer from "./SecondaryContainer";
-import Header from "./Header";
+import MainContainer from "./BackgroundVideo/MainContainer";
+import SecondaryContainer from "./AllMovies/SecondaryContainer";
+import Header from "./header/Header";
 
 const Browser = () => {
-  console.log("thid id ");
   
 
   return (

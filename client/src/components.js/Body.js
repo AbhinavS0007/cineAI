@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Login from "./login";
+import Login from "./Authentication/login";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { adduser, removeUser } from "../utils.js/userSlice";
 import Browser from "./Browser";
-import GPTSearch from "./GPTSearch";
-import MovieRecommendor from "./MovieRecommendor";
+import GPTSearch from "./mlWork/GPTSearch";
+import MovieRecommendor from "./mlWork/MovieRecommendor";
 
 const Body = () => {
   const dispatch = useDispatch();

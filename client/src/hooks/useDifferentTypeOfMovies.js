@@ -10,7 +10,6 @@ const useDifferentTypeOfMovies = () =>{
     const [upCommingMovies, setupCommingMovies] = useState("");
     const [loading, setLoading] = useState(true);
 
-    console.log(PopularMovies);
     
 
 
